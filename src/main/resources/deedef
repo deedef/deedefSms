@@ -1,0 +1,9 @@
+deedef.com.url=http://api.smsmode.com/http/1.6/sendSMS.do
+deedef.com.username=bambandiay
+deedef.com.password=0ri0g86f
+deedef.com.sender =Test
+
+deedef.keystore=/src/main/security/aes-keystore.jck
+deedef.storepass=deedef
+deedef.alias=jceksaes
+deedef.keypass=NiokoBok123
