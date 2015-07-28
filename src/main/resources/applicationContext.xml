@@ -52,6 +52,10 @@
 				/api/status = anon
 				/api/authenticate = anon
 				/api/sms/test = anon
+				/api/db/retriever = anon
+				/api/db/retriever/name = anon
+				/api/db/creator = anon
+				/api/db/updater = anon
 				/api/isSessionValid=anon
 				/api/** = noSessionCreation,deedefClientFilter
 			</value>

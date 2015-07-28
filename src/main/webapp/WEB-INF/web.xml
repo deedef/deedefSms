@@ -28,11 +28,11 @@
             <param-value>true</param-value>
         </init-param>
     </filter>
-    <listener>
+    <!--<listener>
         <listener-class>
             org.springframework.web.context.ContextLoaderListener
         </listener-class>
-    </listener>
+    </listener>-->
 
     <!-- Make sure any request you want accessible to Shiro is filtered. /* catches all -->
     <!-- requests.  Usually this filter mapping is defined first (before all others) to -->
@@ -47,7 +47,7 @@
         <servlet-class>com.sun.jersey.spi.spring.container.servlet.SpringServlet</servlet-class>
         <init-param>
             <param-name>com.sun.jersey.config.property.packages</param-name>
-            <param-value>com.deedef.sms,com.deedef.dao,com.deedef.bean,com.deedef.security,com.deedef.service,com.deedef.Constante</param-value>
+            <param-value>com.deedef.sms,com.deedef.dao,com.deedef.bean,com.deedef.security,com.deedef.service,com.deedef.Constante,com.deedef.db</param-value>
         </init-param>
         <init-param>
             <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
@@ -82,9 +82,5 @@
         <servlet-name>jersey-serlvet</servlet-name>
         <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
-
-
-
-
 
 </web-app>
