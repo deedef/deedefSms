@@ -55,9 +55,9 @@
 				/api/login = anon
 				/api/logout = anon
 				/api/status = anon
-				/api/authenticate = anon
 				/api/sms/test = anon
 				/api/isSessionValid=anon
+				/api/authenticate = anon
 				/api/** = noSessionCreation,deedefClientFilter
 			</value>
 		</property>

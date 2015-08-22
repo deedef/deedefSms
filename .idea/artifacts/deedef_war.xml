@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="deedef:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="deedefSms.war">
+      <element id="artifact" artifact-name="deedef:war exploded" />
+    </root>
+  </artifact>
+</component>

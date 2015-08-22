@@ -7,6 +7,7 @@ com/deedef/security/SecurityUtils.class
 com/deedef/service/ContactService.class
 com/deedef/dao/IProfileMgr.class
 com/deedef/sms/RetourEtatSmsOrange.class
+com/deedef/dao/Impl/ContactMgrImpl.class
 com/deedef/dao/Impl/SmsMgrImpl.class
 com/deedef/exception/ServiceException.class
 com/deedef/sms/RetourEtatSmsSFR.class
@@ -22,6 +23,7 @@ com/deedef/sms/RetourEtatSmsBouygues.class
 com/deedef/sms/EnvoiSmsEnAttenteProcessing.class
 com/deedef/Constante/ConstantStatus.class
 com/deedef/security/CrossDomainFilter.class
+com/deedef/dao/IContactMgr.class
 com/deedef/sms/MiseAJourSmsJob.class
 com/deedef/bean/GsmXmlBean.class
 com/deedef/dao/Impl/ProfileMgrImpl.class

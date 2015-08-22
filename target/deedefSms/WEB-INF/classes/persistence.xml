@@ -11,7 +11,7 @@
              class="org.springframework.jdbc.datasource.DriverManagerDataSource">
               <!-- NORMAL -->
               <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-              <property name="url" value="jdbc:mysql://localhost:3306/deedef_sms_db"/>
+              <property name="url" value="jdbc:mysql://localhost/deedef_sms_db"/>
               <property name="username" value="root"/>
               <property name="password" value=""/>
               <!--<property name="defaultAutoCommit" value="false"/>-->
@@ -72,6 +72,7 @@
 
                             <!--on met les classe mappée comme entity DB-->
                             <value>com.deedef.bean.Profil</value>
+                            <value>com.deedef.bean.Contact</value>
                             <!--<value>test.package.Bar</value>-->
                      </list>
               </property>
