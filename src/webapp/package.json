@@ -1,0 +1,31 @@
+{
+  "name": "deedefsms",
+  "version": "1.0.0",
+  "description": "An AngularJS based application for Deedef's online sms services.",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a 0.0.0.0 -p 8000",
+    "pretest": "npm install",
+    "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
+    "test-single-run": "node node_modules/karma/bin/karma start test/karma.conf.js  --single-run",
+    "preupdate-webdriver": "npm install",
+    "update-webdriver": "webdriver-manager update",
+    "preprotractor": "npm run update-webdriver",
+    "protractor": "protractor test/protractor-conf.js"
+  },
+  "keywords": [
+    "deedef",
+    "sms",
+    "services",
+    "messages",
+    "mms",
+    "deedefsms"
+  ],
+  "author": "Deedef",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.8.0",
+    "jasmine": "^2.3.1"
+  }
+}

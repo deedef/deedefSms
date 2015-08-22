@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px){
+    #logo, #signup_login, .home_content{
+        clear:both;
+        width:100%;
+        text-align: center;
+    }
+    #window{
+        clear:both;
+        width:90%;
+        text-align: center;
+    }
+    #window input{
+        clear:both;
+        width:60%;
+        text-align: center;
+    }
+    #window_top{
+        font-size: 20px;
+    }
+    #window_body{
+         width:100%;
+        text-align: center;
+     }
+    #first, #email, #username, #street, #country, #login_user{
+        margin-right:0;
+     }
+    #country{
+        width:50%;
+    }
+}

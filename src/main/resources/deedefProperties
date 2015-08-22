@@ -7,3 +7,14 @@ deedef.keystore=aes-keystore.jck
 deedef.storepass=deedef
 deedef.alias=jceksaes
 deedef.keypass=NiokoBok123
+
+hibernate.connection.driver_class=com.mysql.jdbc.Driver
+hibernate.connection.url=jdbc:mysql://localhost:3306/mysql
+hibernate.connection.username=root
+hibernate.connection.password=password
+jdbc.pool.initialSize=5
+jdbc.pool.maxActive=100
+jdbc.pool.maxIdle=10
+jdbc.pool.connection.timeout=300
+jdbc.pool.suspectTimeout=50
+hibernate.connection.show_sql=true

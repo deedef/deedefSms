@@ -1,0 +1,403 @@
+*{
+	margin:0;
+	padding:0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration:none;
+}
+
+body{
+	width:100%;
+	height:100%;
+	font-family: Garamond, Georgia;
+}
+
+a{
+	color:inherit;
+}
+
+.clearfix{
+	clear:both;
+	margin-bottom:1%;
+}
+
+.big_clearfix{
+
+    clear:both;
+    margin-bottom:3%;
+}
+
+footer{
+    bottom:0;
+    width: 100%;
+    height:auto;
+    text-align:center;
+    font-weight: bold;
+    margin-top:1%;
+    padding-top:1%;
+    padding-bottom:1%;
+    background: #034D5E;
+    font-size: 20px;
+}
+
+footer a{
+    padding:1%;
+    height:auto;
+}
+
+footer a:hover{
+    background: #fff;
+}
+
+.copyright{
+    float:left;
+    margin-left:10%;
+    clear:both;
+}
+
+/*==========
+index.html
+==========*/
+
+#top{
+	width:100%;
+    height: 384px;
+    background:url('../img/deedefsms_background_grey_desktop.png');
+}
+
+#top:hover{
+    background:url('../img/deedefsms_background_grey_desktop.png');
+}
+
+#logo{
+	float:left;
+    margin:2%;
+}
+
+#signup_login{
+	float:right;
+	margin:1%;
+}
+
+#signup_login a{
+	font-size: 20px;
+}
+
+#signup_login a:hover{
+	text-decoration: underline;
+}
+
+#home_login{
+    margin:1%;
+    width: 100%;
+    text-align: center;
+    font:20px Garamond;
+    background: rgba(51,51,51,0.5);
+    border:1px solid #333;
+    border-radius: 5px;
+}
+
+#home_login *{
+    width:90%;
+    margin:3% 1%;
+}
+
+#home_desc{
+    color:#fff;
+    font-size:30px;
+    text-shadow: 3px 3px 8px #034D5E;
+    text-align: center;
+    position:absolute;
+    left:17%;
+    top:30%;
+}
+
+#center{
+	text-align:center;
+}
+
+#center a{
+    position: absolute;
+    top: 40%;
+    left:44%;
+	padding:1%;
+	font-size: 30px;
+	border:1px solid #034D5E;
+	border-radius: 20px;
+	text-decoration: none;
+	color:#034D5E;
+}
+
+#center a:hover{
+	color:#fff;
+	background: #034D5E;
+}
+
+#content{
+	text-align: center;
+}
+
+.home_content{
+	display:inline-block;
+	margin: 1% 3%;
+	width: 27%;
+}
+
+.content_top{
+}
+
+.home_content > span{
+	position: relative;
+	font-size:20px;
+	font-weight: bold;
+	text-align:center;
+	padding: 1%;
+}
+
+.home_content > span:before{
+  content: "";
+  background: #999;
+  position: absolute;
+  width: 100%;
+	height:5px;
+  bottom: 0;
+  left: 0;
+    border-radius: 5px;
+	visibility: hidden;
+  transform: scaleX(0);
+	-webkit-animation: 1.4s forwards no-hover-span linear;
+  animation: 1.4s forwards no-hover-span linear;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+
+.home_content > span:hover:before,
+.home_content > span:focus:before {
+	visibility: visible;
+	-webkit-animation: .5s forwards hover-span linear;
+  animation: .5s forwards hover-span linear;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hover-span {
+  0% {
+			opacity: 0;
+      transform: scaleX(0);
+      height: 5px;
+  }
+  40% {
+			opacity: 1;
+      transform: scaleX(1.05);
+      height: 5px;
+  }
+  50% {
+			height: 5px;
+	}
+  100% {
+      transform: scaleX(1.05);
+      height: 30px;
+  }
+}
+
+@keyframes hover-span {
+  0% {
+			opacity: 0;
+      transform: scaleX(0);
+      height: 5px;
+  }
+  20% {
+			opacity: 1;
+      transform: scaleX(1.05);
+      height: 5px;
+  }
+  30% {
+			height: 5px;
+	}
+  100% {
+      transform: scaleX(1.05);
+      height: 30px;
+  }
+}
+
+@-webkit-keyframes no-hover-span {
+  0% {
+      transform: scaleX(1.05);
+      height: 30px;
+  }
+  20% {
+			height: 5px;
+	}
+  30% {
+      transform: scaleX(1.05);
+      height: 5px;
+      opacity: 1;
+  }
+  100% {
+      transform: scaleX(0);
+      height: 5px;
+      opacity: 0;
+  }
+}
+
+.home_content > span:hover{
+	font-weight: bold;
+    color:#034D5E;
+}
+
+.home_content > p{
+    background:#034D5E;
+    color:#fff;
+	margin:3% 3% 0 3%;
+	text-align:left;
+	padding: 2% 2% 5% 2%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	font-size: 17px;
+}
+
+.home_content > p:hover{
+    color: #000;
+    background:#fff;
+    border: 1px solid #034D5E;
+}
+
+.image_wrapper{
+    background: #FBFEFE;
+    margin-top:-1%;
+}
+
+.image_content_wrapper{
+    margin-top:0;
+    height:400px;
+}
+
+#left_image_content_wrapper{
+    padding: 5% 0;
+}
+
+#right_image_content_wrapper{
+    padding: 5% 0;
+}
+
+#right_image_text_wrapper{
+    float:left;
+    margin-left: 10%;
+    width:30%;
+}
+
+#right_image_wrapper{
+    float:right;
+    width:50%;
+    margin-right: 1%;
+}
+
+#left_image_text_wrapper{
+    float:right;
+    margin-right: 10%;
+    width:30%;
+}
+
+#left_image_wrapper{
+    float:left;
+    width:50%;
+    margin-left: 1%;
+}
+
+#left_image, #right_image{
+    width:100%;
+    height:300px;
+}
+
+.image_content_wrapper h2{
+    color:#034D5E;
+    font-size:30px;
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 50px;
+}
+
+.image_content_wrapper p{
+    font-size:20px;
+}
+
+/*==========
+enter.html
+==========*/
+
+.active{
+	color:#fff;
+}
+
+.inactive{
+    color:#333;
+}
+
+.inactive:hover{
+    color:#034D5E;
+}
+
+.window{
+    width:50%;
+    margin:5% auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.window_body{
+    text-align: center;
+    border-top:1px solid black;
+}
+
+.window_top{
+    background: linear-gradient(to left, #fff, #034D5E, #fff);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	text-align: center;
+	margin:auto;
+	height: 33px;
+	font-size: 30px;
+}
+
+.window hr{
+    width:5%;
+    margin:auto;
+}
+
+.window input{
+	border-radius: 5px;
+	font-family: Garamond;
+	font-size: 20px;
+	text-indent: 1%;
+}
+
+.window input:focus{
+    border-top: 3px solid #034D5E;
+    border-left: 3px solid #034D5E;
+}
+
+#signup_first, #signup_email, #signup_username, #signup_street, #signup_country, #login_user{
+	margin-top:2%;
+	width:35%;
+	margin-right: 10%;
+}
+
+#signup_last, #signup_phone, #signup_password, #signup_city, #signup_postal_code, #signup_confirm_password, #signup_company, #login_pass{
+	margin-top:2%;
+	width:35%;
+}
+
+#signup_country{
+    background: #FBFEFE;
+}
+
+.validate{
+	font-size: 20px;
+	background: #DBDBDB;
+	padding:1%;
+}
+
+.validate:hover{
+	color:#034D5E;
+    border: 3px double;
+}

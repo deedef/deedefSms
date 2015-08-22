@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="Deedef SMS est un plateforme en ligne qui vous facilite l'envoi des SMS.">
+    <meta name="keywords" content="Deedef SMS, SMS en masse, bulk SMS, message, envois SMS en ligne">
+    <meta name="author" content="Deedef Corporate">
+    <meta name="application-name" content="Deedef SMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>S'inscrire - Deedef SMS</title>
+
+    <!--<link rel="stylesheet" href="bower_components/jquery-mobile-bower/css/jquery.mobile-1.4.5.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">-->
+</head>
+<body>
+    <div class="window">
+        <div class="window_top">
+            S'inscrire
+        </div>
+        <div class="window_body">
+            <section id="signup_form">
+                <label for="signup_first"></label>
+                <input type="text" id="signup_first" name="signup_first" placeholder="Prenom*" autofocus>
+                <label for="signup_last"></label>
+                <input type="text" id="signup_last" name="signup_last" placeholder="Nom*">
+
+                <div class="clearfix"></div>
+
+                <label for="signup_email"></label>
+                <input type="email" id="signup_email" name="signup_email" placeholder="Email*">
+                <label for="signup_phone"></label>
+                <input type="text" id="signup_phone" name="signup_phone" placeholder="Telephone*">
+
+                <div class="clearfix"></div>
+
+                <label for="signup_username"></label>
+                <input type="text" id="signup_username" name="signup_username" placeholder="Pseudo*">
+                <label for="signup_password"></label>
+                <input type="password" id="signup_password" name="signup_password" placeholder="Mot de Passe*">
+
+                <div class="clearfix"></div>
+
+                <label for="signup_confirm_password"></label>
+                <input type="password" id="signup_confirm_password" name="signup_confirm_password" placeholder="Confirmer Mot de Passe*">
+
+                <div class="clearfix"></div><hr><div class="clearfix"></div>
+
+                <label for="signup_street"></label>
+                <input type="text" id="signup_street" name="signup_street" placeholder="Addresse">
+                <label for="signup_city"></label>
+                <input type="text" id="signup_city" name="signup_city" placeholder="Ville">
+
+                <div class="clearfix"></div>
+
+                <label for="signup_country"></label>
+                <select id="signup_country">
+                    <option>--- Pays ---</option>
+                    <!--<option ng-repeat="(key, value) in countries" value="{{value}}">{{value}}</option>-->
+                </select>
+                <label for="signup_postal_code"></label>
+                <input type="text" id="signup_postal_code" name="signup_postal_code" placeholder="Code Postal">
+
+                <div class="clearfix"></div>
+
+                <label for="signup_company"></label>
+                <input type="text" id="signup_company" name="signup_company" placeholder="Societe">
+
+                <div class="clearfix"></div><hr><div class="clearfix"></div>
+
+                <input id="signup_agree" name="signup_agree" value="signup_agree" type="checkbox"><label for="signup_agree">J'accepte les conditions d'utilisations</label>
+
+                <div class="clearfix"></div>
+
+                <label for="signup_button"></label>
+                <button id="signup_button" name="signup_button" class="validate" onclick="/*attemptSignup()*/">Je m'inscris</button>
+
+                <div class="clearfix"></div>
+            </section>
+        </div>
+    </div>
+
+    <div class="big_clearfix"></div>
+
+    <div style="text-align:center;">
+        Vous avez deja un compte?
+        <a href="login.html" style="text-decoration: underline;color: #034D5E;">Connectez-vous</a>
+    </div>
+
+    <div class="big_clearfix"></div>
+
+    <footer>
+        <span class="copyright">Deedef 2015 &copy;</span>
+        <a href="docs/api.html">API</a> | <a href="docs/terms.html">Termes</a>
+    </footer>
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <!--<script src="bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.5.min.js"></script>-->
+    <script src="js/loadCountries.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+</body>
+</html>

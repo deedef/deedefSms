@@ -42,7 +42,7 @@ public class SmsServices {
 
     @GET
     @Path("/test")
-    @Produces("application/xml")
+    @Produces("application/json")
     public Response test() {
 
        // String result = smsMgr.save();
@@ -53,7 +53,7 @@ public class SmsServices {
 
     @GET
     @Path("/secure")
-    @Produces("application/xml")
+    @Produces("application/json")
     public Response testSecure() {
 
         // String result = smsMgr.save();

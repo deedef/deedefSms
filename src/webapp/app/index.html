@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="deedefsms">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Deedef SMS est un plateforme en ligne qui vous facilite l'envoi des SMS.">
+        <meta name="keywords" content="Deedef SMS, SMS en masse, bulk SMS, message, envois SMS en ligne">
+        <meta name="author" content="Deedef Corporate">
+        <meta name="application-name" content="Deedef SMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>Accueil - Deedef SMS</title>
+
+        <!--<link rel="stylesheet" href="bower_components/jquery-mobile-bower/css/jquery.mobile-1.4.5.min.css">-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--<link rel="stylesheet" href="../bower_components/Hover/css/hover-min.css">
+        <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
+        <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">-->
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside id="left_menu">
+                <div id="logo">
+                    <a href="http://www.deedef.com" target="_blank"><img src="" alt="Deedef Logo"></a>
+
+                </div>
+                <a id="dashboard" class="hvr-pop" href="#/dashboard">Dashboard</a><div class="huge_clearfix"></div>
+                <a id="send" class="hvr-pop" href="#/send">Envoyer SMS</a><div class="huge_clearfix"></div>
+                <a id="sent" class="hvr-pop" href="#/sent">SMS Envoyes</a><div class="huge_clearfix"></div>
+                <a id="contacts" class="hvr-pop" href="#/contacts">Contacts</a><div class="huge_clearfix"></div>
+                <a id="credits" class="hvr-pop" href="#/credits">Acheter Credits</a><div class="huge_clearfix"></div>
+                <a id="settings" class="hvr-pop" href="#/settings">Parametres</a><div class="huge_clearfix"></div>
+
+                <!-- Frequently Asked Questions about Deedef SMS , CREATE A FAQ/SUPPORT PAGE AT DEEDEF.COM about SMS
+
+                           >> href="http://www.deedef.com/faq-support.html#deedefsms"
+                           >> provide contact form fro deedefsms related issues
+                -->
+                <a id="help" href="../support.html" target="_blank">Aide</a>
+            </aside>
+
+            <div id="right_content">
+                <p id="welcome_logout">Salut {utilisateur} | <a id="logout">Se Deconnecter</a></p>
+
+                <div class="huge_clearfix"></div>
+
+                <!-- my dynamic ngView -->
+                <div ng-view></div>
+            </div>
+
+            <div class="big_clearfix"></div>
+
+        </div>
+
+        <footer>
+            <span class="copyright">Deedef 2015 &copy;</span>
+            <a href="../docs/api.html">API</a> | <a href="../docs/terms.html">Termes</a> | <a href="http://www.deedef.com/contact">Contact</a>
+        </footer>
+
+
+        <script src="../bower_components/jquery/jquery.min.js"></script>
+        <!--<script src="bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.5.min.js"></script>-->
+        <script src="../bower_components/underscore/underscore-min.js"></script>
+        <!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-route.min.js"></script>
+        <script src="lib/angular-resource.min.js"></script>
+
+        <script src="js/app.js"></script>
+
+        <script src="js/controllers.js"></script>
+            <script src="js/controllers/contacts.js"></script>
+            <script src="js/controllers/credits.js"></script>
+            <script src="js/controllers/dashboard.js"></script>
+            <script src="js/controllers/send.js"></script>
+            <script src="js/controllers/sent.js"></script>
+            <script src="js/controllers/settings.js"></script>
+
+        <script src="js/services.js"></script>
+            <script src="js/services/create.js"></script>
+            <script src="js/services/retrieve.js"></script>
+            <script src="js/services/update.js"></script>
+            <script src="js/services/delete.js"></script>
+            <script src="js/services/crud.js"></script>
+            <script src="js/services/security.js"></script>
+            <script src="js/services/user.js"></script>
+            <script src="js/services/message.js"></script>
+
+        <script src="js/directives.js"></script>
+            <script src="js/directives/display.js"></script>
+
+        <script src="js/filters.js"></script>
+
+        <script src="js/active.js"></script>
+
+    </body>
+</html>

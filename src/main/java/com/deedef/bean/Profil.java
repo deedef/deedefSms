@@ -1,25 +1,58 @@
 package com.deedef.bean;
 
+import javax.persistence.*;
+import java.io.Serializable;
+import java.math.BigInteger;
 import java.util.Date;
 
 /**
  * Created by birame ndiaye on 25/05/2015.
  */
-public class Profil {
 
+@Entity
+@Table(name = "utilisateurs")
+public class Profil implements Serializable {
+    @Id
+    @GeneratedValue
+    @Column(name="ID")
+    private BigInteger id;
+    @Column(name="civilite")
     private String civilie;
+    @Column(name="nom")
     private String  nom;
+    @Column(name="prenom")
     private String  prenom;
+    @Column(name="telephone")
     private String   telephone;
+    @Column(name="mobile")
     private String mobile;
+    @Column(name="email")
     private String  email;
-    private Date dateNaissance;
-                            // Adresse facturation
-                            private String societe;
+    @Column(name="datenaissance")
+    private String dateNaissance;
+    @Column(name="datecreation")
+    private Date dateCreation;
+    @Column(name="login")
+    private String login;
+    @Column(name="societe")
+    private String societe;
+    @Column(name="adresse")
     private String adresse;
+    @Column(name="codepostal")
     private Long codePostale;
+    @Column(name="ville")
     private String ville;
-    private String    pays;
+    @Column(name="pays")
+    private String pays;
+
+
+    public BigInteger getId() {
+        return id;
+    }
+    public void setId(BigInteger id) {
+        this.id = id;
+    }
+
 
     public String getCivilie() {
         return civilie;
@@ -69,11 +102,20 @@ public class Profil {
         this.email = email;
     }
 
-    public Date getDateNaissance() {
+//    public Date getDateNaissance() {
+//        return dateNaissance;
+//    }
+//
+//    public void setDateNaissance(Date dateNaissance) {
+//        this.dateNaissance = dateNaissance;
+//    }
+
+
+    public String getDateNaissance() {
         return dateNaissance;
     }
 
-    public void setDateNaissance(Date dateNaissance) {
+    public void setDateNaissance(String dateNaissance) {
         this.dateNaissance = dateNaissance;
     }
 
@@ -115,5 +157,21 @@ public class Profil {
 
     public void setPays(String pays) {
         this.pays = pays;
+    }
+//
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public Date getDateCreation() {
+        return dateCreation;
+    }
+
+    public void setDateCreation(Date dateCreation) {
+        this.dateCreation = dateCreation;
     }
 }

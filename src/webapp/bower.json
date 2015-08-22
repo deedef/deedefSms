@@ -1,0 +1,30 @@
+{
+  "name": "deedefsms",
+  "main": "index.js",
+  "version": "1.0.0",
+  "authors": [
+    "Deedef <deedefcorporate@gmail.com>"
+  ],
+  "description": "An AngularJS based application for Deedef's online sms services.",
+  "keywords": [
+    "deedef",
+    "sms",
+    "services",
+    "messages",
+    "mms",
+    "deedefsms"
+  ],
+  "license": "(ISC)",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "bootstrap": "~3.3.5",
+    "jquery-mobile-bower": "~1.4.5"
+  }
+}

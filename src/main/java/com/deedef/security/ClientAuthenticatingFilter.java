@@ -29,6 +29,7 @@ public class ClientAuthenticatingFilter extends AuthenticatingFilter{
     protected AuthenticationToken createToken(ServletRequest servletRequest, ServletResponse servletResponse) throws Exception {
         HttpServletRequest htpp= (HttpServletRequest) servletRequest;
         String sessionId= htpp.getHeader("X-deedef-auth");
+        //String sessionId= htpp.getHeader("authorization");
        // if(org.apache.commons.lang.StringUtils.isNotBlank(sessionId))
         if(sessionId!=null){
             return getClientTokenBySessionId(sessionId);
@@ -60,7 +61,7 @@ protected boolean  executeLogin(ServletRequest servletRequest, ServletResponse s
                 if(now.equals(payload.getExpiration())){
                     token=new ClientToken(payload.getUsername(),payload.getSalt());
                 }else{
-                    throw new RuntimeException("La sessionId est expirée");
+                    throw new RuntimeException("La sessionId est expirï¿½e");
                 }
             } catch (JoseException e) {
                 e.printStackTrace();
