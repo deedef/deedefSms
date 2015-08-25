@@ -60,17 +60,17 @@ footer a:hover{
 index.html
 ==========*/
 
-#top{
+.top{
 	width:100%;
     height: 384px;
     background:url('../img/deedefsms_background_grey_desktop.png');
 }
 
-#top:hover{
+.top:hover{
     background:url('../img/deedefsms_background_grey_desktop.png');
 }
 
-#logo{
+.logo{
 	float:left;
     margin:2%;
 }
@@ -388,6 +388,12 @@ enter.html
 }
 
 #signup_country{
+    background: #FBFEFE;
+}
+
+#signup_civilite{
+    margin-top:2%;
+    width:35%;
     background: #FBFEFE;
 }
 

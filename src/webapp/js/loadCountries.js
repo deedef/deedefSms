@@ -11,7 +11,7 @@ $('document').ready(function(){
 
         _.each(sortedCountries, appendCountry);
         function appendCountry(country){
-            var option = "<option value=" + country + "'>" + country + "</option>";
+            var option = "<option value=" + country + ">" + country + "</option>";
             $('#signup_country').append(option);
         }
     });
