@@ -17,12 +17,26 @@
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">-->
 </head>
 <body>
+    <div class="logo">
+        <img src="" alt="Deedef Logo">
+    </div>
+
     <div class="window">
         <div class="window_top">
             S'inscrire
         </div>
         <div class="window_body">
             <section id="signup_form">
+                <label for="signup_civilite"></label>
+                <select id="signup_civilite">
+                    <option>--- Civilite ---</option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mme.">Mme.</option>
+                    <option value="Mlle.">Mlle.</option>
+                </select>
+
+                <div class="clearfix"></div>
+
                 <label for="signup_first"></label>
                 <input type="text" id="signup_first" name="signup_first" placeholder="Prenom*" autofocus>
                 <label for="signup_last"></label>
@@ -59,7 +73,6 @@
                 <label for="signup_country"></label>
                 <select id="signup_country">
                     <option>--- Pays ---</option>
-                    <!--<option ng-repeat="(key, value) in countries" value="{{value}}">{{value}}</option>-->
                 </select>
                 <label for="signup_postal_code"></label>
                 <input type="text" id="signup_postal_code" name="signup_postal_code" placeholder="Code Postal">
